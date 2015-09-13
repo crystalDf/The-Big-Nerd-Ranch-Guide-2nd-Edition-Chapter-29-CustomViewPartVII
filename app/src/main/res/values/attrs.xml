@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomVolumeControlBar">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="dotCount" format="integer"/>
+        <attr name="spliteArcSize" format="integer"/>
+        <attr name="image" format="reference"/>
+    </declare-styleable>
+</resources>
