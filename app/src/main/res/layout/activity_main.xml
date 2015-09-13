@@ -13,21 +13,16 @@
     <com.star.customviewpartvii.CustomVolumeControlBar
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:firstColor="#FF0000"
-        app:secondColor="#00FF00"
-        app:circleWidth="20dp"
+        app:firstColor="#000000"
+        app:secondColor="#FFFFFF"
+        app:circleWidth="10dp"
         app:dotCount="10"
-        app:spliteArcSize="20"
+        app:spliteArcSize="10"
         app:image="@drawable/bubble"/>
 
     <com.star.customviewpartvii.CustomVolumeControlBar
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:firstColor="#000000"
-        app:secondColor="#FFFFFF"
-        app:circleWidth="10dp"
-        app:dotCount="20"
-        app:spliteArcSize="10"
         app:image="@drawable/tmntraph"/>
 
 </LinearLayout>

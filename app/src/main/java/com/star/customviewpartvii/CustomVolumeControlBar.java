@@ -45,39 +45,17 @@ public class CustomVolumeControlBar extends View {
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(attrs,
                 R.styleable.CustomVolumeControlBar, defStyleAttr, 0);
 
-        for (int i = 0; i < typedArray.getIndexCount(); i++) {
-            int attr = typedArray.getIndex(i);
-
-            switch (attr) {
-                case R.styleable.CustomVolumeControlBar_firstColor:
-                    mFirstColor = typedArray.getColor(attr, Color.GREEN);
-                    break;
-
-                case R.styleable.CustomVolumeControlBar_secondColor:
-                    mSecondColor = typedArray.getColor(attr, Color.RED);
-                    break;
-
-                case R.styleable.CustomVolumeControlBar_circleWidth:
-                    mCircleWidth = typedArray.getDimensionPixelSize(attr,
-                            (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20,
-                                    getResources().getDisplayMetrics()));
-                    break;
-
-                case R.styleable.CustomVolumeControlBar_dotCount:
-                    mDotCount = typedArray.getInt(attr, 20);
-                    break;
-
-                case R.styleable.CustomVolumeControlBar_spliteArcSize:
-                    mSpliteArcSize = typedArray.getInt(attr, 20);
-                    break;
-
-                case R.styleable.CustomVolumeControlBar_image:
-                    mImage = BitmapFactory.decodeResource(getResources(),
-                            typedArray.getResourceId(attr, 0));
-                    break;
-
-            }
-        }
+        mFirstColor = typedArray.getColor(R.styleable.CustomVolumeControlBar_firstColor,
+                Color.GREEN);
+        mSecondColor = typedArray.getColor(R.styleable.CustomVolumeControlBar_secondColor,
+                Color.RED);
+        mCircleWidth = typedArray.getDimensionPixelSize(R.styleable.CustomVolumeControlBar_circleWidth,
+                (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20,
+                        getResources().getDisplayMetrics()));
+        mDotCount = typedArray.getInt(R.styleable.CustomVolumeControlBar_spliteArcSize, 20);
+        mSpliteArcSize = typedArray.getInt(R.styleable.CustomVolumeControlBar_spliteArcSize, 20);
+        mImage = BitmapFactory.decodeResource(getResources(),
+                typedArray.getResourceId(R.styleable.CustomVolumeControlBar_image, 0));
 
         typedArray.recycle();
 
