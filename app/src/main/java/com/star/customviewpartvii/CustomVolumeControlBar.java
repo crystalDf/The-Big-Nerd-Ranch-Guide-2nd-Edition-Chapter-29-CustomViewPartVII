@@ -142,4 +142,5 @@ public class CustomVolumeControlBar extends View {
         }
         return true;
     }
+
 }
